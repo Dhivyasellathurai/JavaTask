@@ -10,7 +10,11 @@ public class HashMapEx {
 
 		HashMap<Object, Integer> map = new HashMap<>();
 		for (char c : obj) {
-			map.put(c, map.getOrDefault(c, 0) + 1);
+			if(map.containsKey(c)) {
+			map.put(c, map.get(c) + 1);
+			}else {
+				map.put(c, 1);
+			}
 		}
 
 		for (Map.Entry<Object, Integer> entry : map.entrySet()) {

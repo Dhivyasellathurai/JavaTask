@@ -4,9 +4,9 @@ public class Fibonacci2 {
 		int n = 10; 
 
 		System.out.println("Fibonacci Series upto " + n + " terms:");
-		for (int i = 0; i < n; i++) {
-			System.out.print(fibonacci(i) + " ");
-		}
+		System.out.println(fibonacci(n));
+		
+		
 	}
 
 	public static int fibonacci(int n) {

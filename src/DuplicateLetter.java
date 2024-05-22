@@ -24,7 +24,7 @@ public class DuplicateLetter {
 		System.out.println("Duplicate characters in the string '" + str + "':");
 		for (Map.Entry<Character, Integer> entry : charFrequencyMap.entrySet()) {
 			if (entry.getValue() > 1) {
-				System.out.println(entry.getKey() + ": " + entry.getValue() + " occurrences");
+				System.out.println("Occurance"+entry.getKey() + ": " + entry.getValue() + " occurrences");
 			}
 		}
 	}
